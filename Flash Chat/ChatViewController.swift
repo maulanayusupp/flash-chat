@@ -169,18 +169,13 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func logOutPressed(_ sender: AnyObject) {
-        
         //TODO: Log out the user and send them back to WelcomeViewController
-        
         do {
             print("Logout")
             try Auth.auth().signOut()
         } catch {
             print("error, problem with signing out.")
         }
-        
     }
     
-
-
 }
